@@ -85,8 +85,25 @@ section .row video {
     
 }
 
-.Timer{
+#bodyCanvas {
+    margin: 100px 0 30px;
+    border-style: solid;
+    width: 100%;
+    height:550px;
+    /*width:512px;
+    height:550px;*/
+    border-radius: 5px;
+}
+#rectangle{
+    border-style: solid;
+}
+
+.button {
+    align-items: center;
+}
+.center{
     text-align: center;
+    
 }
 
 .col-md-6 {
