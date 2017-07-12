@@ -96,6 +96,8 @@ section .row video {
 }
 #rectangle{
     border-style: solid;
+    width: 30;
+    height: 30;
 }
 
 .button {
