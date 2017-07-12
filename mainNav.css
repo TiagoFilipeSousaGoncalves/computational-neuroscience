@@ -98,6 +98,7 @@ section .row video {
     border-style: solid;
     width: 30px;
     height: 30px;
+    border-radius: 5px;
 }
 
 .button {
