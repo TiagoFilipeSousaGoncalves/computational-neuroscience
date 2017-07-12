@@ -88,10 +88,10 @@ section .row video {
 #bodyCanvas {
     margin: 100px 0 30px;
     border-style: solid;
-    width: 100%;
-    height:550px;
-    /*width:512px;
-    height:550px;*/    
+    /*width: 100%;
+    height:550px;*/
+    width: 512px;
+    height: 424px;*/    
     border-radius: 5px;
 }
 #rectangle{
