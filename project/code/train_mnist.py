@@ -106,6 +106,10 @@ network = DiehlAndCook2015(
     inpt_shape=(1, 28, 28),
 )
 
+
+# Load pre-trained network
+network = torch.load('results/parameters/network.pt')
+
 # Directs network to GPU
 if gpu:
     network.to("cuda")
@@ -127,9 +131,22 @@ spike_record = torch.zeros((update_interval, int(time / dt), n_neurons), device=
 
 # Neuron assignments and spike proportions.
 n_classes = 10
-assignments = -torch.ones(n_neurons, device=device)
-proportions = torch.zeros((n_neurons, n_classes), device=device)
+
+with open('results/parameters/assignments.pickle', "rb") as f:
+    assignments = cPickle.load(f)
+
+assignments = torch.from_numpy(assignments).to(device)
+
+with open('results/parameters/proportions.pickle', "rb") as f:
+    proportions = cPickle.load(f)
+
+proportions = torch.from_numpy(proportions).to(device)
+
+# assignments = -torch.ones(n_neurons, device=device)
+# proportions = torch.zeros((n_neurons, n_classes), device=device)
+
 rates = torch.zeros((n_neurons, n_classes), device=device)
+
 
 # Sequence of accuracy estimates.
 accuracy = {"all": [], "proportion": []}
@@ -246,12 +263,12 @@ for epoch in range(n_epochs):
 
             labels = []
 
-            network.save('network.pt')
+            network.save('results/parameters/network.pt')
 
-            with open('assignments.pickle', 'wb') as fp:
+            with open('results/parameters/assignments.pickle', 'wb') as fp:
                 cPickle.dump(assignments.detach().cpu().numpy(), fp, -1)
 
-            with open('proportions.pickle', 'wb') as fp:
+            with open('results/parameters/proportions.pickle', 'wb') as fp:
                 cPickle.dump(proportions.detach().cpu().numpy(), fp, -1)
 
             print('saved model!')
@@ -296,4 +313,3 @@ for epoch in range(n_epochs):
 
 print("Progress: %d / %d (%.4f seconds)" % (epoch + 1, n_epochs, t() - start))
 print("Training complete.\n")
-
