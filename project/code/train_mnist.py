@@ -49,7 +49,7 @@ parser.add_argument("--train", dest="train", action="store_true")
 parser.add_argument("--test", dest="train", action="store_false")
 parser.add_argument("--plot", dest="plot", action="store_true")
 parser.add_argument("--gpu", dest="gpu", action="store_true")
-parser.set_defaults(plot=True, gpu=False)
+parser.set_defaults(plot=False, gpu=False)
 
 args = parser.parse_args()
 
@@ -108,7 +108,7 @@ network = DiehlAndCook2015(
 
 
 # Load pre-trained network
-network = torch.load('results/parameters/network.pt')
+network = torch.load('results/parameters/network.pt', map_location=torch.device('cpu'))
 
 # Directs network to GPU
 if gpu:
