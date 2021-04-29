@@ -50,7 +50,7 @@ parser.add_argument("--train", dest="train", action="store_true")
 parser.add_argument("--test", dest="train", action="store_false")
 parser.add_argument("--plot", dest="plot", action="store_true")
 parser.add_argument("--gpu", dest="gpu", action="store_true")
-parser.set_defaults(plot=True, gpu=False)
+parser.set_defaults(plot=False, gpu=False)
 
 args = parser.parse_args()
 
@@ -97,14 +97,14 @@ start_intensity = intensity
 
 # Build network.
 network = DiehlAndCook2015(
-    n_inpt=28*28*3,
+    n_inpt=32*32,
     n_neurons=n_neurons,
     exc=exc,
     inh=inh,
     dt=dt,
     norm=78.4,
     theta_plus=theta_plus,
-    inpt_shape=(3, 28, 28),
+    inpt_shape=(1, 32, 32),
 )
 
 
@@ -116,11 +116,14 @@ if gpu:
 train_dataset = CIFAR10(
     PoissonEncoder(time=time, dt=dt),
     None,
-    root=os.path.join("data", "FashionMNIST"),
+    root=os.path.join("data", "CIFAR10"),
     download=True,
     train=True,
     transform=transforms.Compose(
-        [transforms.ToTensor(), transforms.Lambda(lambda x: x * intensity)]
+        [
+            transforms.Grayscale(),
+            transforms.ToTensor(), 
+            transforms.Lambda(lambda x: x * intensity)]
     ),
 )
 
@@ -194,7 +197,8 @@ for epoch in range(n_epochs):
         if step > n_train:
             break
         # Get next input sample.
-        inputs = {"X": batch["encoded_image"].view(int(time / dt), 1, 1, 28, 28)}
+        # print(batch["encoded_image"].shape)
+        inputs = {"X": batch["encoded_image"].view(int(time / dt), 1, 1, 32, 32)}
         if gpu:
             inputs = {k: v.cuda() for k, v in inputs.items()}
 
@@ -279,11 +283,11 @@ for epoch in range(n_epochs):
 
         # Optionally plot various simulation information.
         if plot:
-            image = batch["image"].view(28, 28, 3)
-            inpt = inputs["X"].view(time, 28*28*3).sum(0).view(28, 28, 3)
+            image = batch["image"].view(32, 32)
+            inpt = inputs["X"].view(time, 32*32).sum(0).view(32, 32)
             input_exc_weights = network.connections[("X", "Ae")].w
             square_weights = get_square_weights(
-                input_exc_weights.view(28*28*3, n_neurons), n_sqrt, 28
+                input_exc_weights.view(32*32, n_neurons), n_sqrt, 32
             )
             square_assignments = get_square_assignments(assignments, n_sqrt)
             spikes_ = {layer: spikes[layer].get("s") for layer in spikes}
