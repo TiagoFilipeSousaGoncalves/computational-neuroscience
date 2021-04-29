@@ -9,7 +9,7 @@ from tqdm import tqdm
 
 from time import time as t
 
-from bindsnet.datasets import MNIST
+from bindsnet.datasets import FashionMNIST
 from bindsnet.encoding import PoissonEncoder
 from bindsnet.models import DiehlAndCook2015
 from bindsnet.network.monitors import Monitor
@@ -104,7 +104,7 @@ network = DiehlAndCook2015(
     inpt_shape=(1, 28, 28),
 )
 
-network = torch.load('network.pt')
+network = torch.load('results/parameters/fashionmnist_network.pt')
 
 # Directs network to GPU
 if gpu:
@@ -116,12 +116,12 @@ spike_record = torch.zeros((update_interval, int(time / dt), n_neurons), device=
 # Neuron assignments and spike proportions.
 n_classes = 10
 
-with open('assignments.pickle', "rb") as f:
+with open('results/parameters/fashionmnist_assignments.pickle', "rb") as f:
     assignments = cPickle.load(f)
 
 assignments = torch.from_numpy(assignments).to(device)
 
-with open('proportions.pickle', "rb") as f:
+with open('results/parameters/fashionmnist_proportions.pickle', "rb") as f:
     proportions = cPickle.load(f)
 
 proportions = torch.from_numpy(proportions).to(device)
@@ -156,10 +156,10 @@ for layer in set(network.layers) - {"X"}:
 
 
 # Load MNIST data.
-test_dataset = MNIST(
+test_dataset = FashionMNIST(
     PoissonEncoder(time=time, dt=dt),
     None,
-    root=os.path.join("data", "MNIST"),
+    root=os.path.join("data", "FashionMNIST"),
     download=True,
     train=False,
     transform=transforms.Compose(
@@ -179,6 +179,12 @@ network.train(mode=False)
 start = t()
 
 pbar = tqdm(total=n_test)
+
+
+# List of r_labels
+r_labels = [i for i in range(n_classes)]
+
+
 for step, batch in enumerate(test_dataset):
     if step > n_test:
         break
@@ -195,6 +201,9 @@ for step, batch in enumerate(test_dataset):
 
     # Convert the array of labels into a tensor
     label_tensor = torch.tensor(batch["label"], device=device)
+
+    # Get label
+    label = batch["label"]
 
     # Get network predictions.
     all_activity_pred = all_activity(
@@ -216,6 +225,31 @@ for step, batch in enumerate(test_dataset):
     if step % 100 == 0:
         print("\nAll activity accuracy: %.2f" % (accuracy["all"] / (step + 1)))
         print("Proportion weighting accuracy: %.2f \n" % (accuracy["proportion"] / (step + 1)))
+
+
+    # Check if we already have this label
+    if label in r_labels:
+        # Save batch
+        _batch = batch["encoded_image"].view(int(time / dt), 1, 1, 28, 28).detach().numpy()
+        np.save(
+            file = f"results/predictions/FashionMNIST/batch_{label}.npy",
+            arr = _batch,
+            allow_pickle = True
+        )
+
+        # Save spike record
+        _spike_record = spike_record.detach().numpy()
+        np.save(
+            file = f"results/predictions/FashionMNIST/spike_record_{label}.npy",
+            arr = _spike_record,
+            allow_pickle = True
+        )
+
+        # Remove label from r_labels
+        r_labels.remove(label)
+
+    if len(r_labels) == 0:
+        exit()
 
     network.reset_state_variables()  # Reset state variables.
     pbar.set_description_str("Test progress: ")

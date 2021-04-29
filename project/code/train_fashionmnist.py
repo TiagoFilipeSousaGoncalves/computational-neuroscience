@@ -195,6 +195,7 @@ for epoch in range(n_epochs):
             break
         # Get next input sample.
         inputs = {"X": batch["encoded_image"].view(int(time / dt), 1, 1, 28, 28)}
+        # print(batch, batch["encoded_image"].shape)
         if gpu:
             inputs = {k: v.cuda() for k, v in inputs.items()}
 
