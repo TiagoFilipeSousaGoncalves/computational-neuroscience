@@ -13,6 +13,7 @@ datasets = ["MNIST", "FashionMNIST", "CIFAR10"]
 
 # Go through datasets
 for dataset in datasets:
+    print(f"Dataset: {dataset}")
     dataset_plot_dir = os.path.join("results", "figures", dataset)
 
     if os.path.isdir(dataset_plot_dir) == False:
@@ -39,7 +40,7 @@ for dataset in datasets:
     for label, files in enumerate(zip(batches, spikes)):
         # Get batch and files
         b, s = files
-        # print(b, s)
+        print(b, s)
 
         # Load batch
         batch = np.load(file=os.path.join(results, dataset, b), allow_pickle=True)
@@ -56,6 +57,7 @@ for dataset in datasets:
                 x.append(t)
                 y.append(n_idx)
 
+        """
         # print(len(x), len(y))
         plt.title(f"Input Spikes | Label {label}")
         plt.xlim(-50, 300)
@@ -65,6 +67,7 @@ for dataset in datasets:
         plt.scatter(x, y)
         plt.savefig(fname=os.path.join(dataset_plot_dir, f"in_spikes_{label}.png"), bbox_inches="tight", pad_inches=0.0)
         plt.show()
+        """
 
 
 
@@ -83,6 +86,10 @@ for dataset in datasets:
                 x.append(t)
                 y.append(n_idx)
 
+        # Print unique n_idx
+        print(f"Unique n_idx: {np.unique(y)}")
+
+        """
         # print(len(x), len(y))
         plt.title(f"Output Spikes | Label {label}")
         plt.xlim(-50, 300)
@@ -92,3 +99,4 @@ for dataset in datasets:
         plt.scatter(x, y)
         plt.savefig(fname=os.path.join(dataset_plot_dir, f"out_spikes_{label}.png"), bbox_inches="tight", pad_inches=0.0)
         plt.show()
+        """

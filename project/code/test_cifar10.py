@@ -228,7 +228,7 @@ for step, batch in enumerate(test_dataset):
         print("\nAll activity accuracy: %.2f" % (accuracy["all"] / (step + 1)))
         print("Proportion weighting accuracy: %.2f \n" % (accuracy["proportion"] / (step + 1)))
     
-
+    """
     # Check if we already have this label
     if label in r_labels:
         # Save batch
@@ -252,6 +252,8 @@ for step, batch in enumerate(test_dataset):
 
     if len(r_labels) == 0:
         exit()
+    
+    """
 
     network.reset_state_variables()  # Reset state variables.
     pbar.set_description_str("Test progress: ")

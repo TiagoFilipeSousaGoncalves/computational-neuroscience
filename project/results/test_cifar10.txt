@@ -1,0 +1,221 @@
+Running on Device =  cpu
+Files already downloaded and verified
+
+Begin testing
+
+
+All activity accuracy: 1.00
+Proportion weighting accuracy: 1.00 
+
+
+All activity accuracy: 0.05
+Proportion weighting accuracy: 0.05 
+
+
+All activity accuracy: 0.08
+Proportion weighting accuracy: 0.07 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.08
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.08
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.08
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.08
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.08
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.08
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.08
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.08
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.08
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.08
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.08
+Proportion weighting accuracy: 0.08 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+
+
+All activity accuracy: 0.09
+Proportion weighting accuracy: 0.09 
+

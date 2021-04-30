@@ -1,0 +1,150 @@
+Dataset: MNIST
+Label: 0
+batch_0.npy spike_record_0.npy
+Mutual Information of the Input Neurons and Output Neuron 3: 0.21610983287465643
+Mutual Information of the Input Neurons and Output Neuron 4: 0.22878268817432743
+Mutual Information of the Input Neurons and Output Neuron 29: 0.38748380998038745
+Mutual Information of the Input Neurons and Output Neuron 31: 0.344469122951766
+Mutual Information of the Input Neurons and Output Neuron 52: 0.201761499090995
+Label: 1
+batch_1.npy spike_record_1.npy
+Mutual Information of the Input Neurons and Output Neuron 8: 0.07368018607971086
+Mutual Information of the Input Neurons and Output Neuron 97: 0.02832656557273766
+Label: 2
+batch_2.npy spike_record_2.npy
+Mutual Information of the Input Neurons and Output Neuron 23: 0.23718042369858844
+Mutual Information of the Input Neurons and Output Neuron 71: 0.168622298896935
+Mutual Information of the Input Neurons and Output Neuron 85: 0.2658344494672897
+Label: 3
+batch_3.npy spike_record_3.npy
+Mutual Information of the Input Neurons and Output Neuron 2: 0.2540011847125666
+Mutual Information of the Input Neurons and Output Neuron 7: 0.3515197170873598
+Mutual Information of the Input Neurons and Output Neuron 14: 0.30211957690262164
+Label: 4
+batch_4.npy spike_record_4.npy
+Mutual Information of the Input Neurons and Output Neuron 32: 0.1318472069017424
+Mutual Information of the Input Neurons and Output Neuron 65: 0.14127011481740864
+Mutual Information of the Input Neurons and Output Neuron 80: 0.12678898821835263
+Mutual Information of the Input Neurons and Output Neuron 94: 0.133285732947628
+Label: 5
+batch_5.npy spike_record_5.npy
+Mutual Information of the Input Neurons and Output Neuron 32: 0.19023285091920508
+Mutual Information of the Input Neurons and Output Neuron 37: 0.21308163576408673
+Mutual Information of the Input Neurons and Output Neuron 67: 0.179218241331061
+Mutual Information of the Input Neurons and Output Neuron 75: 0.2021432326115381
+Mutual Information of the Input Neurons and Output Neuron 78: 0.2764119352327784
+Label: 6
+batch_6.npy spike_record_6.npy
+Mutual Information of the Input Neurons and Output Neuron 17: 0.25569966936420685
+Mutual Information of the Input Neurons and Output Neuron 28: 0.27683473962586547
+Label: 7
+batch_7.npy spike_record_7.npy
+Mutual Information of the Input Neurons and Output Neuron 18: 0.09501769784448956
+Mutual Information of the Input Neurons and Output Neuron 26: 0.11054275482471312
+Mutual Information of the Input Neurons and Output Neuron 92: 0.10534516358390301
+Mutual Information of the Input Neurons and Output Neuron 99: 0.15858763813385773
+Label: 8
+batch_8.npy spike_record_8.npy
+Mutual Information of the Input Neurons and Output Neuron 11: 0.25552325760578354
+Mutual Information of the Input Neurons and Output Neuron 33: 0.2061196649606458
+Mutual Information of the Input Neurons and Output Neuron 35: 0.26387192062094267
+Mutual Information of the Input Neurons and Output Neuron 90: 0.23669231074895553
+Label: 9
+batch_9.npy spike_record_9.npy
+Mutual Information of the Input Neurons and Output Neuron 38: 0.14776927542869533
+Mutual Information of the Input Neurons and Output Neuron 65: 0.09427397247924656
+Mutual Information of the Input Neurons and Output Neuron 94: 0.13685509879319663
+Dataset: FashionMNIST
+Label: 0
+batch_0.npy spike_record_0.npy
+Mutual Information of the Input Neurons and Output Neuron 22: 0.6097870673104017
+Mutual Information of the Input Neurons and Output Neuron 24: 0.708839045174872
+Mutual Information of the Input Neurons and Output Neuron 64: 0.6439202684654058
+Mutual Information of the Input Neurons and Output Neuron 67: 0.7926286074492754
+Mutual Information of the Input Neurons and Output Neuron 85: 0.8253181267258545
+Label: 1
+batch_1.npy spike_record_1.npy
+Mutual Information of the Input Neurons and Output Neuron 7: 0.2535876272961163
+Mutual Information of the Input Neurons and Output Neuron 11: 0.3076667661290376
+Mutual Information of the Input Neurons and Output Neuron 16: 0.2926797960714336
+Mutual Information of the Input Neurons and Output Neuron 65: 0.279144654258019
+Mutual Information of the Input Neurons and Output Neuron 67: 0.3927679125082292
+Mutual Information of the Input Neurons and Output Neuron 72: 0.2826706374246187
+Mutual Information of the Input Neurons and Output Neuron 87: 0.24565283456795076
+Label: 2
+batch_2.npy spike_record_2.npy
+Mutual Information of the Input Neurons and Output Neuron 4: 0.984852885281299
+Mutual Information of the Input Neurons and Output Neuron 12: 0.612841601285567
+Mutual Information of the Input Neurons and Output Neuron 29: 0.8394647467510852
+Mutual Information of the Input Neurons and Output Neuron 32: 0.8905418229928505
+Mutual Information of the Input Neurons and Output Neuron 66: 0.7302887185497704
+Mutual Information of the Input Neurons and Output Neuron 71: 0.7428283252641018
+Label: 3
+batch_3.npy spike_record_3.npy
+Mutual Information of the Input Neurons and Output Neuron 11: 0.2956381761769381
+Mutual Information of the Input Neurons and Output Neuron 65: 0.3316579944460946
+Mutual Information of the Input Neurons and Output Neuron 67: 0.27066261712055606
+Mutual Information of the Input Neurons and Output Neuron 72: 0.3024992151329965
+Mutual Information of the Input Neurons and Output Neuron 87: 0.2371208449004386
+Label: 4
+batch_4.npy spike_record_4.npy
+Label: 5
+batch_5.npy spike_record_5.npy
+Label: 6
+batch_6.npy spike_record_6.npy
+Mutual Information of the Input Neurons and Output Neuron 2: 0.5215298913493538
+Mutual Information of the Input Neurons and Output Neuron 15: 0.656919624247968
+Mutual Information of the Input Neurons and Output Neuron 19: 0.5599602261934344
+Mutual Information of the Input Neurons and Output Neuron 39: 0.5902443651574077
+Label: 7
+batch_7.npy spike_record_7.npy
+Mutual Information of the Input Neurons and Output Neuron 77: 0.20241430911083422
+Label: 8
+batch_8.npy spike_record_8.npy
+Mutual Information of the Input Neurons and Output Neuron 3: 0.7426779129814758
+Mutual Information of the Input Neurons and Output Neuron 21: 0.3619347227939154
+Mutual Information of the Input Neurons and Output Neuron 96: 0.6605319160677747
+Mutual Information of the Input Neurons and Output Neuron 97: 0.3616577411978491
+Label: 9
+batch_9.npy spike_record_9.npy
+Mutual Information of the Input Neurons and Output Neuron 0: 0.24559549267572817
+Mutual Information of the Input Neurons and Output Neuron 21: 0.23537465902110516
+Mutual Information of the Input Neurons and Output Neuron 92: 0.2033375964876848
+Dataset: CIFAR10
+Label: 0
+batch_0.npy spike_record_0.npy
+Mutual Information of the Input Neurons and Output Neuron 1: 0.9763422925915666
+Mutual Information of the Input Neurons and Output Neuron 18: 1.076046947864832
+Mutual Information of the Input Neurons and Output Neuron 20: 1.1773348155039156
+Mutual Information of the Input Neurons and Output Neuron 90: 1.0125674012759824
+Label: 1
+batch_1.npy spike_record_1.npy
+Label: 2
+batch_2.npy spike_record_2.npy
+Mutual Information of the Input Neurons and Output Neuron 18: 0.803959872597934
+Label: 3
+batch_3.npy spike_record_3.npy
+Mutual Information of the Input Neurons and Output Neuron 45: 0.8593760021422359
+Mutual Information of the Input Neurons and Output Neuron 73: 1.054360776004806
+Label: 4
+batch_4.npy spike_record_4.npy
+Label: 5
+batch_5.npy spike_record_5.npy
+Label: 6
+batch_6.npy spike_record_6.npy
+Mutual Information of the Input Neurons and Output Neuron 11: 0.9352228807622281
+Mutual Information of the Input Neurons and Output Neuron 28: 0.8794543528224562
+Label: 7
+batch_7.npy spike_record_7.npy
+Label: 8
+batch_8.npy spike_record_8.npy
+Mutual Information of the Input Neurons and Output Neuron 1: 1.1259023256692902
+Mutual Information of the Input Neurons and Output Neuron 18: 0.9810425752709384
+Mutual Information of the Input Neurons and Output Neuron 23: 1.180598533902168
+Mutual Information of the Input Neurons and Output Neuron 36: 1.0613654550242513
+Label: 9
+batch_9.npy spike_record_9.npy
+Mutual Information of the Input Neurons and Output Neuron 1: 1.000642983765977
+Mutual Information of the Input Neurons and Output Neuron 14: 1.066165585977383
+Mutual Information of the Input Neurons and Output Neuron 18: 1.0621985322182073
+Mutual Information of the Input Neurons and Output Neuron 23: 1.1281417519280277
