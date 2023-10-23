@@ -1,0 +1,7 @@
+@inproceedings{capozzigoncalves2023recpad,
+	author = {Leonardo Capozzi, Tiago Gonçalves, Jaime S. Cardoso and Ana Rebelo},
+	title = {{Analysis of Neurons’ Information in Deep Spiking Neural Networks using Information Theory}},
+	booktitle = {29th Portuguese Conference in Pattern Recognition (RECPAD)},
+	year = {2023},
+    address = {Coimbra, Portugal}
+}
